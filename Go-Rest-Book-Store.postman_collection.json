@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "96d3e0cb-1145-46a1-8b09-53009de5a878",
+		"name": "Go-Rest-Book-Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8685586"
+	},
+	"item": [
+		{
+			"name": "GetAllBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9010/books/",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSingleBook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9010/books/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"BookName\",\r\n    \"Author\":\"BookAuthor\",\r\n    \"Publication\":\"BookPublication\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9010/books/",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"BookName2\",\r\n    \"Author\":\"BookAuthor2\",\r\n    \"Publication\":\"BookPublication2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9010/books/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBook",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
